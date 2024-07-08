@@ -19,7 +19,8 @@ function _init(data, info) {
         info.getPlatformData().then(function (platformData) {
             console.log(platformData);
         });
-        info.getInfoFromProcessVariables().then(function(data) {           
+        info.getInfoFromProcessVariables().then(function(data) { 
+            console.log(data)          
             let objectsArray = _formatStringToArrayObject(data);
 
             if(objectsArray.length !== 0) {
